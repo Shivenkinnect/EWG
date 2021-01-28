@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Coinscore : MonoBehaviour
+{
+
+    Text text;
+    public static int coinAmount=0;
+    
+    void Start()
+    {
+       
+        text = GetComponent<Text> ();
+    }
+    
+    void Update()
+    {
+        //coinAmount ++;
+        text.text = coinAmount.ToString();
+    }
+} 
